@@ -14,7 +14,7 @@ const projects = [
     description:
       "A clean and efficient task manager with CRUD operations, category filtering, and a responsive UI.",
     tech: ["React", "Tailwind CSS", "LocalStorage"],
-    image: "public/assets/todo.png",
+    image: "/assets/todo.png",
     github: "https://github.com/dhakadabhishek00/TodoList",
   },
 ];
