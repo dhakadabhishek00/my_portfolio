@@ -1,1 +1,36 @@
-@import "tailwindcss";
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s  forwards, 0.7s  infinite;
+  animation-delay: 1s, 1s; 
+  animation-iteration-count: infinite;
+  
+}
+
+.typinglogo {
+  overflow: hidden; 
+  white-space: nowrap;           
+  animation: typing 3s;
+}
+
+@keyframes typinglogo {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes typing {
+  0% { width: 0 }
+  60% { width: 100% }   
+  80% { width: 100% }   
+  100% { width: 0 }     
+}
+
+
+
+
+
+
+
+
