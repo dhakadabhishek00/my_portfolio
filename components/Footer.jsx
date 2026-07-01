@@ -1,3 +1,4 @@
+import { FiDownload } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -28,6 +29,14 @@ const Footer = () => {
               className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-bold transition hover:bg-white hover:text-slate-950"
             >
               <FaLinkedin aria-hidden="true" /> LinkedIn
+            </a>
+            <a
+              href="/assets/Abhishek_Dhakad_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-bold transition hover:bg-white hover:text-slate-950"
+            >
+              <FiDownload aria-hidden="true" /> Resume
             </a>
           </div>
         </div>

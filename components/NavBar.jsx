@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FiArrowUpRight, FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { FiArrowUpRight, FiDownload, FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import myPic from "../public/assets/logo.png";
 
 const Navbar = ({ theme, onToggleTheme }) => {
@@ -58,6 +58,14 @@ const Navbar = ({ theme, onToggleTheme }) => {
             >
               GitHub <FiArrowUpRight aria-hidden="true" />
             </a>
+            <a
+              href="/assets/Abhishek_Dhakad_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-black text-white transition hover:bg-white/10"
+            >
+              Resume <FiDownload aria-hidden="true" />
+            </a>
             <button
               type="button"
               onClick={onToggleTheme}
@@ -107,6 +115,15 @@ const Navbar = ({ theme, onToggleTheme }) => {
                 {item.label}
               </NavLink>
             ))}
+            <a
+              href="/assets/Abhishek_Dhakad_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="rounded-xl bg-teal-400 px-4 py-3 text-sm font-black text-slate-950"
+            >
+              Resume
+            </a>
           </div>
         </div>
       )}

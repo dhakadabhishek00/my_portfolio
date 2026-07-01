@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import { FiDownload, FiMail, FiMapPin, FiSend } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
@@ -84,6 +84,14 @@ const Contact = () => {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm font-black text-white transition hover:bg-white/10"
             >
               <FaLinkedin aria-hidden="true" /> LinkedIn
+            </a>
+            <a
+              href="/assets/Abhishek_Dhakad_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-teal-300 px-4 py-2 text-sm font-black text-slate-950 transition hover:bg-teal-200"
+            >
+              <FiDownload aria-hidden="true" /> Resume
             </a>
           </div>
         </div>
